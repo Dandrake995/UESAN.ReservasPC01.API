@@ -7,12 +7,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Infrastructure\**" />
+    <EmbeddedResource Remove="Infrastructure\**" />
+    <None Remove="Infrastructure\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="CORE\DTO\" />
-    <Folder Include="CORE\Entities\" />
-    <Folder Include="CORE\Interface\" />
     <Folder Include="CORE\Settings\" />
     <Folder Include="CORE\Services\" />
-    <Folder Include="Infrastructure\Data\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\UESAN.ReservasPC01.API\UESAN.ReservasPC01.API.csproj" />
   </ItemGroup>
 
 </Project>
